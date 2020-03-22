@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Wojciech, Magdalena, Chiara, Aleksandra">
+	<meta name="description" content="It doesn't matter if you are a new or current student, we are the Study Counseling and we have an answer for your question!">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/mystyle.css">
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+	<title>Study Counseling | Business Academy Aarhus</title>
+</head>
+
+<body>
+	<div class="container">
+		<img src="images/bluecircle.svg" class="container__item container__item1" alt="blueCircle">
+		<img src="images/orangecircle.svg" class="container__item container__item2" alt="orangeCircle">
+		<img src="images/orangecircle.svg" class="container__item container__item3" alt="orangeCircle">
+		<img src="images/turquoisecircle.svg" class="container__item container__item4" alt="turquoiseCircle">
+		<div class="container__content">
+			<img src="images/Winking_Avatar_HTML5-Canvas.gif" class="container__img" alt="avatar">
+			<header class="container__header">
+				<p>Welcome to the Study Counselling.<br>
+					We are here to help you.</p>
+			</header>
+			<button class="button" id="btn-start">START
+			</button>
+		</div>
+	</div>
+	<div class="container2">
+		<img src="images/bluecircle.svg" class="container__item container__item1" alt="blueCircle">
+		<img src="images/orangecircle.svg" class="container__item container__item2" alt="orangeCircle">
+		<img src="images/orangecircle.svg" class="container__item container__item3" alt="orangeCircle">
+		<img src="images/turquoisecircle.svg" class="container__item container__item4" alt="turquoiseCircle">
+		<div class="container__content">
+			<img src="images/Blinking_Avatar_HTML5-Canvas.gif" class="container__img" alt="avatar">
+			<header class="container2__header">
+				<p>Choose your language</p>
+			</header>
+			<div class="container2__btn-content">
+				<button class="container2__btn-content__btn" id="danish-btn"><img src="images/dk.svg" alt="danish flag"></button>
+				<button class="container2__btn-content__btn" id="british-btn" onclick="location.href='menu.html'"><img src="images/uk.svg" alt="british flag"></button>
+			</div>
+		</div>
+	</div>
+	<!--<div class="dots">
+		<div class="dot__el1"></div>
+		<div class="dot__el2"></div>
+	</div>-->
+	<script>
+		/*$(window).on("load", function(){
+			$(".dots").fadeOut("slow");
+		});*/
+
+
+		$(document).ready(function(){
+			$("#btn-start").click(function(){
+				console.log("add style");
+				setTimeout(function() {
+						$(".container").css({
+							"display":"none"
+						});
+						$(".container2").css({
+							"display":"block"
+						});
+					},400);
+			});
+
+
+		var buttons = document.getElementsByTagName('button');
+
+		Array.prototype.forEach.call(buttons, function (b) {
+    		b.addEventListener('click', createRipple);
+			});
+
+		function createRipple (e) {
+    		var circle = document.createElement('div');
+   	 		this.appendChild(circle);
+
+   	 		var d = Math.max(this.clientWidth, this.clientHeight);
+
+  	 	 	circle.style.width = circle.style.height = d + 'px';
+
+			var rect = this.getBoundingClientRect();
+			circle.style.left = e.clientX - rect.left -d/1.3 + 'px';
+			circle.style.top = e.clientY - rect.top - d/1.3 + 'px';
+
+			console.log(this);
+
+			circle.classList.add('ripple');
+		}
+		});
+	</script>
+</body>
+
+</html>
