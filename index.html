@@ -43,7 +43,7 @@
 			</header>
 			<div class="container2__btn-content">
 				<button class="container2__btn-content__btn ripple" id="danish-btn"><img src="images/dk.svg" alt="danish flag"></button>
-				<button class="container2__btn-content__btn ripple" id="british-btn" onclick="location.href='menu.html'"><img src="images/uk.svg" alt="british flag"></button>
+				<button class="container2__btn-content__btn ripple" id="british-btn" onclick="menu()"><img src="images/uk.svg" alt="british flag"></button>
 			</div>
 		</div>
 	</div>
@@ -70,6 +70,12 @@
 				},500);
 			});
 		});
+
+		function menu(){
+			setTimeout(function(){
+				location.href="menu.html";
+			}, 500);
+		}
 
 	</script>
 </body>
