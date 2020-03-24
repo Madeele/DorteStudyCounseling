@@ -382,10 +382,13 @@ input[type=submit] {
 
 .faq__answers_text .faq__answers_close {
   font-size: 50px;
-  margin: 30px 10px 0 30px;
+  margin: 0 30px 30px 30px;
   float: right;
   cursor: pointer;
   color: #E37B7B;
+  position: absolute;
+  background-color: transparent;
+  outline: none;
 }
 
 .faq__answers_text .faq__answers_text-content {
@@ -439,6 +442,143 @@ input[type=submit] {
   -webkit-box-shadow: 4px 8px 6px #00000021;
           box-shadow: 4px 8px 6px #00000021;
   font-size: 20px;
+}
+
+.xbutton {
+  position: relative;
+  cursor: pointer;
+  margin: 40px 10px 0 30px;
+  float: right;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  font-size: 52px;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.xbutton span[class^='ion'] {
+  position: relative;
+}
+
+.xbutton:before {
+  content: '';
+  background-color: #FAFAFA;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: scale(0.001, 0.001);
+          transform: scale(0.001, 0.001);
+}
+
+.xbutton:focus {
+  outline: 0;
+  color: #fff;
+}
+
+.xbutton:focus:before {
+  -webkit-animation: effect_dylan 0.8s ease-out;
+          animation: effect_dylan 0.8s ease-out;
+}
+
+@-webkit-keyframes effect_dylan {
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  99% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
+}
+
+@keyframes effect_dylan {
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  99% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
+}
+
+.xbutton2 {
+  position: absolute;
+  cursor: pointer;
+  float: right;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  font-size: 52px;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  z-index: 100;
+}
+
+.xbutton2 span[class^='ion'] {
+  position: relative;
+}
+
+.xbutton2:before {
+  content: '';
+  background-color: #FAFAFA;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: scale(0.001, 0.001);
+          transform: scale(0.001, 0.001);
+  z-index: 100;
+}
+
+.xbutton2:focus {
+  outline: 0;
+  color: #fff;
+}
+
+.xbutton2:focus:before {
+  -webkit-animation: effect_dylan 0.8s ease-out;
+          animation: effect_dylan 0.8s ease-out;
+}
+
+@keyframes effect_dylan {
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  99% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
 }
 
 /******************* WELCOME *******************/
