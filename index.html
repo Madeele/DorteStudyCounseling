@@ -7,7 +7,7 @@
 	<meta name="description" content="It doesn't matter if you are a new or current student, we are the Study Counseling and we have an answer for your question!">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="css/mystyle.css">
+	<link rel="stylesheet" href="css/main.css">
 
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -27,7 +27,7 @@
 				<p>Welcome to the Study Counselling.<br>
 					We are here to help you.</p>
 			</header>
-			<button class="button" id="btn-start">START
+			<button class="ripple container__btn" id="btn-start">START
 			</button>
 		</div>
 	</div>
@@ -42,8 +42,8 @@
 				<p>Choose your language</p>
 			</header>
 			<div class="container2__btn-content">
-				<button class="container2__btn-content__btn" id="danish-btn"><img src="images/dk.svg" alt="danish flag"></button>
-				<button class="container2__btn-content__btn" id="british-btn" onclick="location.href='menu.html'"><img src="images/uk.svg" alt="british flag"></button>
+				<button class="container2__btn-content__btn ripple" id="danish-btn"><img src="images/dk.svg" alt="danish flag"></button>
+				<button class="container2__btn-content__btn ripple" id="british-btn" onclick="location.href='menu.html'"><img src="images/uk.svg" alt="british flag"></button>
 			</div>
 		</div>
 	</div>
@@ -67,33 +67,10 @@
 						$(".container2").css({
 							"display":"block"
 						});
-					},400);
+				},500);
 			});
-
-
-		var buttons = document.getElementsByTagName('button');
-
-		Array.prototype.forEach.call(buttons, function (b) {
-    		b.addEventListener('click', createRipple);
-			});
-
-		function createRipple (e) {
-    		var circle = document.createElement('div');
-   	 		this.appendChild(circle);
-
-   	 		var d = Math.max(this.clientWidth, this.clientHeight);
-
-  	 	 	circle.style.width = circle.style.height = d + 'px';
-
-			var rect = this.getBoundingClientRect();
-			circle.style.left = e.clientX - rect.left -d/1.3 + 'px';
-			circle.style.top = e.clientY - rect.top - d/1.3 + 'px';
-
-			console.log(this);
-
-			circle.classList.add('ripple');
-		}
 		});
+
 	</script>
 </body>
 
