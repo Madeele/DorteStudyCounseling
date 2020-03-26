@@ -7,8 +7,8 @@
 	<meta name="description" content="It doesn't matter if you are a new or current student, we are the Study Counseling and we have an answer for your question!">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="css/main.css">
-
+	<link rel="stylesheet" href="css/mystyle.css">
+	
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
@@ -19,8 +19,7 @@
 
 <body>
 	<div class="menu">
-		<div class="xbutton2" tabindex="1" onclick="back()"></div>
-		<img src="images/prev.svg" class="container__prev-arrow"alt="prev arrow">
+		<img src="images/prev.svg" class="container__prev-arrow"alt="prev arrow" onclick="location.href='index.html'">
 		<img src="images/bluecircle.svg" class="container__item container__item1" alt="blueCircle">
 		<img src="images/orangecircle.svg" class="container__item container__item2" alt="orangeCircle">
 		<img src="images/orangecircle.svg" class="container__item container__item3" alt="orangeCircle">
@@ -31,58 +30,12 @@
 				<p>Choose what do you want to do:</p>
 			</header>
 			<div class="menu__btn-content">
-				<button type="submit" class="menu__btn-content__btn btn1 ripple" onclick="faq()"><i class="fas fa-question"></i>FAQ</button>
-				<button class="menu__btn-content__btn bt2 ripple" onclick="calendar()"><i class="far fa-calendar"></i>Calendar</button>
-				<button class="menu__btn-content__btn btn3 ripple" onclick="test()"><i class="far fa-file-alt"></i>Program Test</button>
-
+				<button type="submit" class="menu__btn-content__btn btn1" onclick="location.href='faq.html'"><i class="fas fa-question"></i>FAQ</button>
+				<button class="menu__btn-content__btn bt2" onclick="location.href='calendar.html'"><i class="far fa-calendar"></i>Calendar</button>
+				<button class="menu__btn-content__btn btn3" onclick="location.href='test.html'"><i class="far fa-file-alt"></i>Test</button>
 			</div>
 		</div>
 	</div>
-	<script>
-		function faq(){
-			setTimeout(function(){
-				location.href="faq.html";
-			}, 400);
-		}
-
-		function calendar(){
-			setTimeout(function(){
-				location.href="calendar.html";
-			}, 400);
-		}
-
-		function test(){
-			setTimeout(function(){
-				location.href="test.html";
-			}, 400);
-		}
-	</script>
 </body>
-<script>
-	function faq(){
-		setTimeout(function(){
-			location.href="faq.html";
-		}, 500);
-	}
-
-	function calendar(){
-		setTimeout(function(){
-			location.href="calendar.html";
-		}, 500);
-	}
-
-	function test(){
-		setTimeout(function(){
-			location.href="test.html";
-		}, 500);
-	}
-
-
-	function back(){
-			setTimeout(function(){
-				location.href="index.html";
-			}, 200);
-		}
-</script>
 
 </html>
