@@ -93,10 +93,13 @@
 
             .faq__answers_close{
                 font-size: 50px;
-                margin: 30px 10px 0 30px;
+                margin: 0 30px 30px 30px;
                 float: right;
                 cursor: pointer;
                 color: $red;
+                position: absolute;
+                background-color: transparent;
+                outline: none;
             }
 
             .faq__answers_text-content{
@@ -176,3 +179,106 @@
         }
     }
 }
+
+.xbutton {
+    position: relative;
+    cursor: pointer;
+    margin: 40px 10px 0 30px;
+    float: right;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    font-size: 52px;
+    transition: all 0.4s ease-in;
+    span[class^='ion'] {
+      position: relative;
+      
+    }
+    //start click effect
+    &:before {
+      content: '';
+      background-color: $grey;
+      border-radius: 50%;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: scale(0.001, 0.001);
+    }
+    &:focus {
+      outline: 0;
+      color: #fff;
+      &:before {
+        animation: effect_dylan 0.8s ease-out;
+      }
+    }
+  }
+  @keyframes effect_dylan {
+    50% {
+      transform: scale(1.5, 1.5);
+      opacity: 0;
+    }
+    99% {
+      transform: scale(0.001, 0.001);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(0.001, 0.001);
+      opacity: 1;
+    }
+}
+
+.xbutton2 {
+    position: absolute;
+    cursor: pointer;
+    float: right;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    font-size: 52px;
+    transition: all 0.4s ease-in;
+    z-index: 100;
+    span[class^='ion'] {
+      position: relative;
+      
+    }
+    //start click effect
+    &:before {
+      content: '';
+      background-color: $grey;
+      border-radius: 50%;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: scale(0.001, 0.001);
+      z-index: 100;
+    }
+    &:focus {
+      outline: 0;
+      color: #fff;
+      &:before {
+        animation: effect_dylan 0.8s ease-out;
+      }
+    }
+  }
+  @keyframes effect_dylan {
+    50% {
+      transform: scale(1.5, 1.5);
+      opacity: 0;
+    }
+    99% {
+      transform: scale(0.001, 0.001);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(0.001, 0.001);
+      opacity: 1;
+    }
+  }
+
+  

@@ -17,7 +17,8 @@
 
 <body>
 	<div class="faq">
-		<img src="images/prev.svg" class="faq__prev-arrow"alt="prev arrow" onclick="location.href='menu.html'">
+		<div class="xbutton2" tabindex="1">
+		<img src="images/prev.svg" class="faq__prev-arrow"alt="prev arrow" onclick="back()"></div>
 		<div class="faq__questions">
 			<img src="images/avatarblue.svg" class="container__img" alt="avatar">
 			<header class="container__header">
@@ -36,7 +37,9 @@
 			<div class="faq__answers_el7">How can I apply for Housing?</div>
 
 			<div class="faq__answers_text faq__answers_text1">
-				<span class="faq__answers_close">&times;</span>
+				<div class="xbutton" tabindex="1">
+					<span class="faq__answers_close">&times;</span>
+				</div>
 
 				<div class="faq__answers_text-content">
 					<h2>We offer the following AP programmes:</h2>
@@ -63,7 +66,9 @@
 				</div>
 			</div>
 			<div class="faq__answers_text faq__answers_text2">
-				<span class="faq__answers_close">&times;</span>
+				<div class="xbutton" tabindex="1">
+					<span class="faq__answers_close">&times;</span>
+				</div>
 
 				<div class="faq__answers_text-content">
 					<h2>Degree programmes at Business Academy Aarhus:</h2>
@@ -104,7 +109,9 @@
 				</div>
 			</div>
 			<div class="faq__answers_text faq__answers_text3">
-				<span class="faq__answers_close">&times;</span>
+				<div class="xbutton" tabindex="1">
+					<span class="faq__answers_close">&times;</span>
+				</div>
 
 				<div class="faq__answers_text-content">
 
@@ -156,7 +163,9 @@
 				</div>
 			</div>
 			<div class="faq__answers_text faq__answers_text4">
-				<span class="faq__answers_close">&times;</span>
+				<div class="xbutton" tabindex="1">
+					<span class="faq__answers_close">&times;</span>
+				</div>
 
 				<div class="faq__answers_text-content">
 					<p>You must upload attachments as documentation for the information stated in your
@@ -210,7 +219,9 @@
 				</div>
 			</div>
 			<div class="faq__answers_text faq__answers_text5">
-				<span class="faq__answers_close">&times;</span>
+				<div class="xbutton" tabindex="1">
+					<span class="faq__answers_close">&times;</span>
+				</div>
 
 				<div class="faq__answers_text-content">
 					<p>For all students on full-time programmes:</p>
@@ -225,7 +236,9 @@
 				</div>
 			</div>
 			<div class="faq__answers_text faq__answers_text6">
-				<span class="faq__answers_close">&times;</span>
+				<div class="xbutton" tabindex="1">
+					<span class="faq__answers_close">&times;</span>
+				</div>
 
 				<div class="faq__answers_text-content">
 					<h2>Prepare for the future with your internship</h2>
@@ -245,7 +258,9 @@
 				</div>
 			</div>
 			<div class="faq__answers_text faq__answers_text7">
-				<span class="faq__answers_close">&times;</span>
+				<div class="xbutton" tabindex="1">
+					<span class="faq__answers_close">&times;</span>
+				</div>
 
 				<div class="faq__answers_text-content">
 					<h2>Housing for full degree students</h2>
@@ -349,10 +364,18 @@
         	});
 			//Closing any answers
 			$(".faq__answers_close").click(function(){
+				setTimeout(function() {
 				$(".faq__answers_text").animate({right: "-100%"}, 200);
+			},300);
 			});
 
 		});
+
+		function back(){
+			setTimeout(function(){
+				location.href="menu.html";
+			}, 200);
+		}
 	</script>
 </body>
 

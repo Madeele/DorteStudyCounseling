@@ -9,6 +9,227 @@
         box-shadow: 4px 8px 6px #00000021;
     }
 }
+.box{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box2{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box3{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box4{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box5{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box6{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box7{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box8{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box9{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box10{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box11{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box12{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box13{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box14{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box15{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box16{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box17{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box18{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box19{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box20{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box21{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+
+.test_container2a{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
 .test_container2a{
     @extend %mainContainer;
     background-color: $white;
@@ -219,6 +440,7 @@
     text-align: center;
     font-family: $font;
     box-shadow: 4px 8px 6px #00000021;
+    outline: none;
 
 }
 .question_answers{
@@ -232,7 +454,7 @@
 }
 
 .slidecontainer {
-    width: 100%;
+    width: 90%;
 }
 
 .slider {
@@ -285,7 +507,7 @@ p{
 }
 
 .ok_btn{
-    width: 100%;
+    width: 95%;
     box-shadow: 4px 8px 6px #00000021;
 }
 
