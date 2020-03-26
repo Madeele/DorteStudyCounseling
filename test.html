@@ -87,7 +87,7 @@
 					options in a personal meeting. You can also
 					check our FAQ section for further information.</p>
 			</header>
-			<button class="test_container__btn ripple" onclick="location.href='menu.html'" id="test_result_ok">OK</button>
+			<button class="test_container__btn ripple" onclick="ok_menu()" id="test_result_ok">OK</button>
 
 		</div>
 	</div>
@@ -180,7 +180,7 @@
 					Chemical and
 					Biotechnical Science</p>
 			</header>
-			<button class="test_container__btn ripple" onclick="location.href='menu.html'" id="test_result_ok">OK</button>
+			<button class="test_container__btn ripple" onclick="ok_menu()" id="test_result_ok">OK</button>
 
 		</div>
 	</div>
@@ -198,7 +198,7 @@
 					Technology and Food
 					Technology</p>
 			</header>
-			<button class="test_container__btn ripple" onclick="location.href='menu.html'" id="test_result_ok">OK</button>
+			<button class="test_container__btn ripple" onclick="ok_menu()" id="test_result_ok">OK</button>
 		</div>
 	</div>
 	<div class="test_container5a">
@@ -230,7 +230,7 @@
 			<header class="container__header">
 				<p class="final_result">Financial Management and Services</p>
 			</header>
-			<button class="test_container__btn ripple" onclick="location.href='menu.html'" id="test_result_ok">OK</button>
+			<button class="test_container__btn ripple" onclick="ok_menu()" id="test_result_ok">OK</button>
 		</div>
 	</div>
 	<div class="test_container6a">
@@ -263,7 +263,7 @@
 			<header class="container__header">
 				<p class="final_result">IT Technology</p>
 			</header>
-			<button class="test_container__btn ripple" onclick="location.href='menu.html'" id="test_result_ok">OK</button>
+			<button class="test_container__btn ripple" onclick="ok_menu()" id="test_result_ok">OK</button>
 		</div>
 	</div>
 	<div class="test_container6a_result2">
@@ -278,7 +278,7 @@
 				<p class="final_result">Marketing
 					Management</p>
 			</header>
-			<button class="test_container__btn ripple" onclick="location.href='menu.html'" id="test_result_ok">OK</button>
+			<button class="test_container__btn ripple" onclick="ok_menu()" id="test_result_ok">OK</button>
 		</div>
 	</div>
 	<div class="test_container6a_result3">
@@ -292,7 +292,7 @@
 			<header class="container__header">
 				<p class="final_result">Multimedia Design</p>
 			</header>
-			<button class="test_container__btn ripple" onclick="location.href='menu.html'" id="test_result_ok">OK</button>
+			<button class="test_container__btn ripple" onclick="ok_menu()" id="test_result_ok">OK</button>
 		</div>
 	</div>
 	<div class="test_container6b">
@@ -327,7 +327,7 @@
 				<p class="final_result">Digital Concept
 					Development</p>
 			</header>
-			<button class="test_container__btn ripple" onclick="location.href='menu.html'" id="test_result_ok">OK</button>
+			<button class="test_container__btn ripple" onclick="ok_menu()" id="test_result_ok">OK</button>
 		</div>
 	</div>
 	<div class="test_container6b_result2">
@@ -342,7 +342,7 @@
 				<p class="final_result">Innovation and
 					Entrepreneurship</p>
 			</header>
-			<button class="test_container__btn ripple" onclick="location.href='menu.html'" id="test_result_ok">OK</button>
+			<button class="test_container__btn ripple" onclick="ok_menu()" id="test_result_ok">OK</button>
 		</div>
 	</div>
 	<div class="test_container6b_result3">
@@ -357,7 +357,7 @@
 				<p class="final_result">Product Development and Integrative Technology
 				</p>
 			</header>
-			<button class="test_container__btn ripple" onclick="location.href='menu.html'" id="test_result_ok">OK</button>
+			<button class="test_container__btn ripple" onclick="ok_menu()" id="test_result_ok">OK</button>
 		</div>
 	</div>
 	<div class="test_container6b_result4">
@@ -371,7 +371,7 @@
 			<header class="container__header">
 				<p class="final_result">Web Development</p>
 			</header>
-			<button class="test_container__btn ripple" onclick="location.href='menu.html'" id="test_result_ok">OK</button>
+			<button class="test_container__btn ripple" onclick="ok_menu()" id="test_result_ok">OK</button>
 		</div>
 	</div>
 </body>
@@ -849,6 +849,12 @@
 			},500);
 			});
 		});
+
+		function ok_menu(){
+			setTimeout(function(){
+				location.href="menu.html";
+			}, 200);
+		}
 
 	</script>
 </body>
