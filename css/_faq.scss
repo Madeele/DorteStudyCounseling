@@ -16,6 +16,19 @@
         z-index: 100;
     }
 
+    &__prev-arrow::before{
+        content: '';
+    background-color: aliceblue;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale(0.001, 0.001);
+    }
+
     &__questions{
         background-color: $turquoise;
         width: 35%;
