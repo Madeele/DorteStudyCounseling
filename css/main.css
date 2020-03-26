@@ -61,57 +61,75 @@ body {
 }
 
 .calendar__container__content__days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 10%;
-  height: 100%;
-  max-height: 100%;
-  display: -ms-inline-grid;
-  display: inline-grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  margin-left: -20%;
-  font-size: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  outline: none;
+  position: absolute;
+  height: 60%;
+  margin-top: 15px;
+}
+
+.calendar__container__content__days__element1 {
+  margin-bottom: 30px;
 }
 
 .calendar__container__content__table {
-  width: 140%;
+  width: 150%;
   height: 60%;
   background-color: #FAFAFA;
   border-radius: 20px;
   text-align: center;
+  -webkit-box-shadow: 4px 8px 6px #00000021;
+          box-shadow: 4px 8px 6px #00000021;
 }
 
 .calendar__container__content__table__grid {
-  width: 85%;
-  height: 100%;
-  max-height: 100%;
-  display: -ms-inline-grid;
-  display: inline-grid;
-  -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
-      grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
-  margin-right: -20%;
+  margin-top: 70px;
+  margin-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 85%;
+  height: 70%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  outline: none;
+  float: right;
 }
 
-.calendar__container__content__table__grid .calendar__container__content__table__grid__element1, .calendar__container__content__table__grid .calendar__container__content__table__grid__element2, .calendar__container__content__table__grid .calendar__container__content__table__grid__element3, .calendar__container__content__table__grid .calendar__container__content__table__grid__element6, .calendar__container__content__table__grid .calendar__container__content__table__grid__element7, .calendar__container__content__table__grid .calendar__container__content__table__grid__element8, .calendar__container__content__table__grid .calendar__container__content__table__grid__element9, .calendar__container__content__table__grid .calendar__container__content__table__grid__element11, .calendar__container__content__table__grid .calendar__container__content__table__grid__element12, .calendar__container__content__table__grid .calendar__container__content__table__grid__element13, .calendar__container__content__table__grid .calendar__container__content__table__grid__element14, .calendar__container__content__table__grid .calendar__container__content__table__grid__element16, .calendar__container__content__table__grid .calendar__container__content__table__grid__element17, .calendar__container__content__table__grid .calendar__container__content__table__grid__element18, .calendar__container__content__table__grid .calendar__container__content__table__grid__element19, .calendar__container__content__table__grid .calendar__container__content__table__grid__element20, .calendar__container__content__table__grid .calendar__container__content__table__grid__element21, .calendar__container__content__table__grid .calendar__container__content__table__grid__element22, .calendar__container__content__table__grid .calendar__container__content__table__grid__element23, .calendar__container__content__table__grid .calendar__container__content__table__grid__element24, .calendar__container__content__table__grid .calendar__container__content__table__grid__element25, .calendar__container__content__table__grid .calendar__container__content__table__grid__element27, .calendar__container__content__table__grid .calendar__container__content__table__grid__element28, .calendar__container__content__table__grid .calendar__container__content__table__grid__element29, .calendar__container__content__table__grid .calendar__container__content__table__grid__element30, .calendar__container__content__table__grid .calendar__container__content__table__grid__element31, .calendar__container__content__table__grid .calendar__container__content__table__grid__element33 {
-  background-color: #93BF71;
-  width: 90%;
-  height: 20%;
+.calendar__container__content__table__grid .calendar__container__content__table__grid__element1, .calendar__container__content__table__grid .calendar__container__content__table__grid__element2, .calendar__container__content__table__grid .calendar__container__content__table__grid__element3, .calendar__container__content__table__grid .calendar__container__content__table__grid__element6, .calendar__container__content__table__grid .calendar__container__content__table__grid__element7, .calendar__container__content__table__grid .calendar__container__content__table__grid__element8, .calendar__container__content__table__grid .calendar__container__content__table__grid__element9, .calendar__container__content__table__grid .calendar__container__content__table__grid__element11, .calendar__container__content__table__grid .calendar__container__content__table__grid__element12, .calendar__container__content__table__grid .calendar__container__content__table__grid__element13, .calendar__container__content__table__grid .calendar__container__content__table__grid__element14, .calendar__container__content__table__grid .calendar__container__content__table__grid__element16, .calendar__container__content__table__grid .calendar__container__content__table__grid__element18, .calendar__container__content__table__grid .calendar__container__content__table__grid__element19, .calendar__container__content__table__grid .calendar__container__content__table__grid__element20, .calendar__container__content__table__grid .calendar__container__content__table__grid__element21, .calendar__container__content__table__grid .calendar__container__content__table__grid__element22, .calendar__container__content__table__grid .calendar__container__content__table__grid__element23, .calendar__container__content__table__grid .calendar__container__content__table__grid__element24, .calendar__container__content__table__grid .calendar__container__content__table__grid__element25, .calendar__container__content__table__grid .calendar__container__content__table__grid__element27, .calendar__container__content__table__grid .calendar__container__content__table__grid__element29, .calendar__container__content__table__grid .calendar__container__content__table__grid__element30, .calendar__container__content__table__grid .calendar__container__content__table__grid__element31, .calendar__container__content__table__grid .calendar__container__content__table__grid__element32, .calendar__container__content__table__grid .calendar__container__content__table__grid__element33, .calendar__container__content__table__grid .calendar__container__content__table__grid__element34, .calendar__container__content__table__grid .calendar__container__content__table__grid__element35, .calendar__container__content__table__grid .calendar__container__content__table__grid__element36, .calendar__container__content__table__grid .calendar__container__content__table__grid__element37, .calendar__container__content__table__grid .calendar__container__content__table__grid__element38, .calendar__container__content__table__grid .calendar__container__content__table__grid__element39, .calendar__container__content__table__grid .calendar__container__content__table__grid__element40, .calendar__container__content__table__grid .calendar__container__content__table__grid__element41, .calendar__container__content__table__grid .calendar__container__content__table__grid__element42, .calendar__container__content__table__grid .calendar__container__content__table__grid__element44, .calendar__container__content__table__grid .calendar__container__content__table__grid__element45, .calendar__container__content__table__grid .calendar__container__content__table__grid__element46, .calendar__container__content__table__grid .calendar__container__content__table__grid__element47, .calendar__container__content__table__grid .calendar__container__content__table__grid__element49, .calendar__container__content__table__grid .calendar__container__content__table__grid__element50, .calendar__container__content__table__grid .calendar__container__content__table__grid__element51, .calendar__container__content__table__grid .calendar__container__content__table__grid__element52, .calendar__container__content__table__grid .calendar__container__content__table__grid__element53, .calendar__container__content__table__grid .calendar__container__content__table__grid__element54, .calendar__container__content__table__grid .calendar__container__content__table__grid__element55, .calendar__container__content__table__grid .calendar__container__content__table__grid__element56, .calendar__container__content__table__grid .calendar__container__content__table__grid__element58, .calendar__container__content__table__grid .calendar__container__content__table__grid__element59 {
+  background-color: #BDD7A9;
+  width: 7.5%;
+  padding: 5px;
+  margin: 4px;
   border-radius: 20px;
-  margin: 40% 3%;
-  padding: 13% 2% 30% 2%;
-  font-size: 13px;
+  font-size: 14px;
   border: none;
   cursor: pointer;
   font-family: freight-sans-pro, sans-serif;
 }
 
-.calendar__container__content__table__grid .calendar__container__content__table__grid__element4, .calendar__container__content__table__grid .calendar__container__content__table__grid__element5, .calendar__container__content__table__grid .calendar__container__content__table__grid__element10, .calendar__container__content__table__grid .calendar__container__content__table__grid__element15, .calendar__container__content__table__grid .calendar__container__content__table__grid__element26, .calendar__container__content__table__grid .calendar__container__content__table__grid__element32 {
+.calendar__container__content__table__grid .calendar__container__content__table__grid__element4, .calendar__container__content__table__grid .calendar__container__content__table__grid__element5, .calendar__container__content__table__grid .calendar__container__content__table__grid__element10, .calendar__container__content__table__grid .calendar__container__content__table__grid__element15, .calendar__container__content__table__grid .calendar__container__content__table__grid__element17, .calendar__container__content__table__grid .calendar__container__content__table__grid__element26, .calendar__container__content__table__grid .calendar__container__content__table__grid__element28, .calendar__container__content__table__grid .calendar__container__content__table__grid__element43, .calendar__container__content__table__grid .calendar__container__content__table__grid__element48, .calendar__container__content__table__grid .calendar__container__content__table__grid__element57 {
   background-color: #E37B7B;
-  height: 20%;
+  width: 7.5%;
+  margin: 4px;
+  padding: 5px;
   border-radius: 20px;
-  margin: 40% 3%;
-  padding: 13% 2% 30% 2%;
-  font-size: 13px;
-  width: 90%;
+  font-size: 14px;
   border: none;
   cursor: pointer;
   font-family: freight-sans-pro, sans-serif;
@@ -134,7 +152,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 20%;
+  width: 60%;
   background-color: #FAFAFA;
   color: #262626;
   text-align: left;
@@ -183,7 +201,7 @@ label {
 }
 
 input, select {
-  width: 90%;
+  width: 40%;
   /* Full width */
   padding: 5px;
   /* Some padding */
@@ -198,8 +216,8 @@ input, select {
   display: block;
   color: #262626;
   font-size: 15px;
-  margin: 10px auto;
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 40px;
+  font-family: freight-sans-pro, sans-serif;
 }
 
 select {
@@ -224,7 +242,6 @@ input::placeholder {
 
 input[type=datetime-local] {
   text-align: center;
-  margin: 25px auto 15px auto;
 }
 
 /* Style the submit button with a specific background color etc */
@@ -236,7 +253,6 @@ input[type=submit] {
   border-radius: 30px;
   cursor: pointer;
   font-size: 16px;
-  margin: 30px auto 15px auto;
 }
 
 .thankyou__info {
@@ -279,6 +295,96 @@ input[type=submit] {
   font-size: 16px;
   text-transform: uppercase;
   margin: 30px auto 15px auto;
+}
+
+.xbutton2 {
+  position: absolute;
+  cursor: pointer;
+  float: right;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  font-size: 52px;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  z-index: 100;
+}
+
+.xbutton2 span[class^='ion'] {
+  position: relative;
+}
+
+.xbutton2:before {
+  content: '';
+  background-color: #FAFAFA;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: scale(0.001, 0.001);
+          transform: scale(0.001, 0.001);
+  z-index: 100;
+}
+
+.xbutton2:focus {
+  outline: 0;
+  color: #fff;
+}
+
+.xbutton2:focus:before {
+  -webkit-animation: effect_dylan 0.8s ease-out;
+          animation: effect_dylan 0.8s ease-out;
+}
+
+@-webkit-keyframes effect_dylan {
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  99% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
+}
+
+@keyframes effect_dylan {
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  99% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
+}
+
+#map {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  height: 450px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px;
+  outline: 0;
 }
 
 .faq {
@@ -367,6 +473,20 @@ input[type=submit] {
   cursor: pointer;
   -webkit-box-shadow: 4px 8px 6px #00000021;
           box-shadow: 4px 8px 6px #00000021;
+}
+
+.faq__answers_text::-webkit-scrollbar {
+  width: 10px;
+}
+
+.faq__answers_text::-webkit-scrollbar-track {
+  background-color: #FAFAFA;
+}
+
+.faq__answers_text::-webkit-scrollbar-thumb {
+  background-color: #FFB275;
+  width: 10px;
+  border-radius: 20px;
 }
 
 .faq__answers_text {
@@ -483,24 +603,6 @@ input[type=submit] {
 .xbutton:focus:before {
   -webkit-animation: effect_dylan 0.8s ease-out;
           animation: effect_dylan 0.8s ease-out;
-}
-
-@-webkit-keyframes effect_dylan {
-  50% {
-    -webkit-transform: scale(1.5, 1.5);
-            transform: scale(1.5, 1.5);
-    opacity: 0;
-  }
-  99% {
-    -webkit-transform: scale(0.001, 0.001);
-            transform: scale(0.001, 0.001);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(0.001, 0.001);
-            transform: scale(0.001, 0.001);
-    opacity: 1;
-  }
 }
 
 @keyframes effect_dylan {

@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/main.css">
 
 
+	<script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 	<title>Study Counseling | Business Academy Aarhus</title>
@@ -17,7 +18,8 @@
 
 <body>
 	<div class="calendar__container">
-		<img src="images/prev.svg" class="faq__prev-arrow"alt="prev arrow" onclick="location.href='menu.html'">
+		<div class="xbutton2" tabindex="1"></div>
+		<img src="images/prev.svg" class="faq__prev-arrow"alt="prev arrow" onclick="back()">
 		<div class="calendar__container__content">
 				<header class="calendar__container__content__header">
 					<img src="images/avatarorange.svg" class="calendar__container__content__img" alt="avatar">
@@ -28,10 +30,13 @@
 					<div class="calendar__container__content__days__element1">Monday</div>
 					<div class="calendar__container__content__days__element1">Tuesday</div>
 					<div class="calendar__container__content__days__element1">Wednesday</div>
+					<div class="calendar__container__content__days__element1">Thursday</div>
+					<div class="calendar__container__content__days__element1">Friday</div>
 				</div>
 				<div class="popup" onclick="myFunction()">
 					<div class="popuptext" id="myPopup">
 						<form action="/#" name="contactForm">
+							<div id="map"></div>
 							<label  for="fname">First Name</label>
 							<input class="popup_label" type="text" id="fname" name="firstname" placeholder="Your name.." minlength="3" maxlength="20" required>
 
@@ -65,6 +70,7 @@
 							<button onclick="location.href='menu.html'">Back</button>
 						</div>
 				  </div>
+				
 				<div class="calendar__container__content__table__grid">
 					<button class="calendar__container__content__table__grid__element1" onclick="myFunction()" id="btn_hours">09:00 - 09:30</button>
  					<button class="calendar__container__content__table__grid__element2">09:30 - 10:00</button>
@@ -100,8 +106,32 @@
 					<button class="calendar__container__content__table__grid__element31">12:30 - 13:00</button>
 					<button class="calendar__container__content__table__grid__element32">13:00 - 13:30</button>
 					<button class="calendar__container__content__table__grid__element33">13:30 - 14:00</button>
-					<button class="calendar__container__content__table__grid__element33">14:00 - 14:30</button>
-					<button class="calendar__container__content__table__grid__element33">14:30 - 15:00</button>
+					<button class="calendar__container__content__table__grid__element34">14:00 - 14:30</button>
+					<button class="calendar__container__content__table__grid__element35">14:30 - 15:00</button>
+					<button class="calendar__container__content__table__grid__element36">09:00 - 09:30</button>
+					<button class="calendar__container__content__table__grid__element37">09:30 - 10:00</button>
+					<button class="calendar__container__content__table__grid__element38">10:00 - 10:30</button>
+					<button class="calendar__container__content__table__grid__element39">10:30 - 11:00</button>
+					<button class="calendar__container__content__table__grid__element40">11:00 - 11:30</button>
+					<button class="calendar__container__content__table__grid__element41">11:30 - 12:00</button>
+					<button class="calendar__container__content__table__grid__element42">12:00 - 12:30</button>
+					<button class="calendar__container__content__table__grid__element43">12:30 - 13:00</button>
+					<button class="calendar__container__content__table__grid__element44">13:00 - 13:30</button>
+					<button class="calendar__container__content__table__grid__element45">13:30 - 14:00</button>
+					<button class="calendar__container__content__table__grid__element46">14:00 - 14:30</button>
+					<button class="calendar__container__content__table__grid__element47">14:30 - 15:00</button>
+					<button class="calendar__container__content__table__grid__element48">09:00 - 09:30</button>
+					<button class="calendar__container__content__table__grid__element49">09:30 - 10:00</button>
+					<button class="calendar__container__content__table__grid__element50">10:00 - 10:30</button>
+					<button class="calendar__container__content__table__grid__element51">10:30 - 11:00</button>
+					<button class="calendar__container__content__table__grid__element52">11:00 - 11:30</button>
+					<button class="calendar__container__content__table__grid__element53">11:30 - 12:00</button>
+					<button class="calendar__container__content__table__grid__element54">12:00 - 12:30</button>
+					<button class="calendar__container__content__table__grid__element55">12:30 - 13:00</button>
+					<button class="calendar__container__content__table__grid__element56">13:00 - 13:30</button>
+					<button class="calendar__container__content__table__grid__element57">13:30 - 14:00</button>
+					<button class="calendar__container__content__table__grid__element58">14:00 - 14:30</button>
+					<button class="calendar__container__content__table__grid__element59">14:30 - 15:00</button>
 				</div>
 			</div>
 		</div>
@@ -165,6 +195,40 @@
 				thanks.style="display: fixed";
 			};
 		};
+
+		function back(){
+			setTimeout(function(){
+				location.href="menu.html";
+			}, 200);
+		}
+
+
+		/********* MAPBOX**********/
+
+		mapboxgl.accessToken = 'pk.eyJ1IjoibWFkZWVsZSIsImEiOiJjazdkMWF3NjIwNTBiM2lud2k3cjY0Njl5In0.d6TBUltXIwgnMsKbwESW7g';
+
+		var monument = [10.159,56.120];
+
+		var map = new mapboxgl.Map({
+			container: 'map',
+			style: 'mapbox://styles/madeele/ck88yjffu26oy1ikb7lcr33b0',
+			center: monument,
+			zoom: 16
+		});
+
+		function calendar_back(){
+			setTimeout(function(){
+				$(".calendar__container__content__table__grid").css({
+					"display":"none"
+					});
+					setTimeout(function() {
+						$(".calendar__container__content__table__grid2").css({
+							"display":"block",
+							
+						});
+					},);
+			}, 200);
+		}
 		</script>
 </body>
 </html>

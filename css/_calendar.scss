@@ -1,3 +1,4 @@
+
 // File: _calendar.scss
 
 .calendar__container{
@@ -39,40 +40,47 @@
         }
 
         &__days{
+            display: flex;
+            justify-content: center;
             width: 10%;
-            height: 100%;
-            max-height: 100%;
-            display: inline-grid;
-            grid-template-columns: auto;
-            margin-left: -20%;
-            font-size: 20px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            outline: none;
+            position: absolute;
+            height: 60%;
+            margin-top: 15px;
+                &__element1 {
+                    margin-bottom: 30px;
+                }
         }
 
         &__table{
-            width: 140%;
+            width: 150%;
             height: 60%;
             background-color: $grey;
             border-radius: 20px;
             text-align: center;
-
-
+            box-shadow: 4px 8px 6px #00000021;
 
             &__grid{
-                width: 85%;
-                height: 100%;
-                max-height: 100%;
-                display: inline-grid;
-                grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
-                margin-right: -20%;
+                margin-top: 70px;
+                margin-right: 40px;
+                display: flex;
+                justify-content: center;
+                max-width: 85%;
+                height: 70%;
+                flex-wrap: wrap;
+                outline: none;
+                float: right;
+                
 
                 %green_elements{
                     background-color: $green;
-                    width: 90%;
-                    height: 20%;
+                    width: 7.5%;
+                    padding: 5px;
+                    margin: 4px;
                     border-radius: 20px;
-                    margin: 40% 3%;
-                    padding: 13% 2% 30% 2%;
-                    font-size: 13px;
+                    font-size: 14px;
                     border: none;
                     cursor: pointer;
                     font-family: freight-sans-pro, sans-serif;
@@ -80,12 +88,11 @@
 
                 %red_elements{
                     background-color: $red;
-                    height: 20%;
+                    width: 7.5%;
+                    margin: 4px;
+                    padding: 5px;
                     border-radius: 20px;
-                    margin:40% 3%;
-                    padding: 13% 2% 30% 2%;
-                    font-size: 13px;
-                    width: 90%;
+                    font-size: 14px;
                     border: none;
                     cursor: pointer;
                     font-family: freight-sans-pro, sans-serif;
@@ -140,7 +147,7 @@
                     @extend %green_elements;
                 }
                 &__element17{
-                    @extend %green_elements;
+                    @extend %red_elements;
                 }
                 &__element18{
                     @extend %green_elements;
@@ -173,7 +180,7 @@
                     @extend %green_elements;
                 }
                 &__element28{
-                    @extend %green_elements;
+                    @extend %red_elements;
                 }
                 &__element29{
                     @extend %green_elements;
@@ -185,9 +192,87 @@
                     @extend %green_elements;
                 }
                 &__element32{
-                    @extend %red_elements;
+                    @extend %green_elements;
                 }
                 &__element33{
+                    @extend %green_elements;
+                }
+                &__element34{
+                    @extend %green_elements;
+                }
+                &__element35{
+                    @extend %green_elements;
+                }
+                &__element36{
+                    @extend %green_elements;
+                }
+                &__element37{
+                    @extend %green_elements;
+                }
+                &__element38{
+                    @extend %green_elements;
+                }
+                &__element39{
+                    @extend %green_elements;
+                }
+                &__element40{
+                    @extend %green_elements;
+                }
+                &__element41{
+                    @extend %green_elements;
+                }
+                &__element42{
+                    @extend %green_elements;
+                }
+                &__element43{
+                    @extend %red_elements;
+                }
+                &__element44{
+                    @extend %green_elements;
+                }
+                &__element45{
+                    @extend %green_elements;
+                }
+                &__element46{
+                    @extend %green_elements;
+                }
+                &__element47{
+                    @extend %green_elements;
+                }
+                &__element48{
+                    @extend %red_elements;
+                }
+                &__element49{
+                    @extend %green_elements;
+                }
+                &__element50{
+                    @extend %green_elements;
+                }
+                &__element51{
+                    @extend %green_elements;
+                }
+                &__element52{
+                    @extend %green_elements;
+                }
+                &__element53{
+                    @extend %green_elements;
+                }
+                &__element54{
+                    @extend %green_elements;
+                }
+                &__element55{
+                    @extend %green_elements;
+                }
+                &__element56{
+                    @extend %green_elements;
+                }
+                &__element57{
+                    @extend %red_elements;
+                }
+                &__element58{
+                    @extend %green_elements;
+                }
+                &__element59{
                     @extend %green_elements;
                 }
             }
@@ -207,7 +292,7 @@
     visibility: hidden;
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 60%;
     background-color:$grey;
     color: $dark;
     text-align: left;
@@ -222,7 +307,6 @@
     -moz-box-shadow: 4px 8px 6px #00000021;
     box-shadow: 4px 8px 6px #00000021;
 }
-
 
   /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
@@ -249,7 +333,7 @@ label{
 }
 
 input, select {
-    width: 90%; /* Full width */
+    width: 40%; /* Full width */
     padding: 5px; /* Some padding */
     background-color: $dark-grey;
     border: none;
@@ -259,8 +343,8 @@ input, select {
     display: block;
     color: $dark;
     font-size: 15px;
-    margin: 10px auto;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 40px;
+    font-family: $font;
 }
 
 select{
@@ -272,8 +356,7 @@ input::placeholder{
 }
 
 input[type=datetime-local]{
-      text-align: center;
-      margin: 25px auto 15px auto;
+    text-align: center;
 }
 
 /* Style the submit button with a specific background color etc */
@@ -285,7 +368,6 @@ input[type=submit] {
     border-radius: 30px;
     cursor: pointer;
     font-size: 16px;
-    margin: 30px auto 15px auto;
 }
 
 .thankyou__info{
@@ -323,4 +405,70 @@ input[type=submit] {
         text-transform: uppercase;
         margin: 30px auto 15px auto;
     }
-  }
+}
+
+.xbutton2 {
+    position: absolute;
+    cursor: pointer;
+    float: right;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    font-size: 52px;
+    transition: all 0.4s ease-in;
+    z-index: 100;
+    span[class^='ion'] {
+      position: relative;
+      
+    }
+    //start click effect
+    &:before {
+      content: '';
+      background-color: $grey;
+      border-radius: 50%;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: scale(0.001, 0.001);
+      z-index: 100;
+    }
+    &:focus {
+      outline: 0;
+      color: #fff;
+      &:before {
+        animation: effect_dylan 0.8s ease-out;
+      }
+    }
+}
+
+@keyframes effect_dylan {
+    50% {
+      transform: scale(1.5, 1.5);
+      opacity: 0;
+    }
+    99% {
+      transform: scale(0.001, 0.001);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(0.001, 0.001);
+      opacity: 1;
+    }
+}
+
+
+#map {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 450px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    outline: 0;
+}
+ 
