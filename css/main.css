@@ -121,6 +121,7 @@ body {
   border: none;
   cursor: pointer;
   font-family: freight-sans-pro, sans-serif;
+  outline: none;
 }
 
 .calendar__container__content__table__grid .calendar__container__content__table__grid__element4, .calendar__container__content__table__grid .calendar__container__content__table__grid__element5, .calendar__container__content__table__grid .calendar__container__content__table__grid__element10, .calendar__container__content__table__grid .calendar__container__content__table__grid__element15, .calendar__container__content__table__grid .calendar__container__content__table__grid__element17, .calendar__container__content__table__grid .calendar__container__content__table__grid__element26, .calendar__container__content__table__grid .calendar__container__content__table__grid__element28, .calendar__container__content__table__grid .calendar__container__content__table__grid__element43, .calendar__container__content__table__grid .calendar__container__content__table__grid__element48, .calendar__container__content__table__grid .calendar__container__content__table__grid__element57 {
@@ -133,6 +134,7 @@ body {
   border: none;
   cursor: pointer;
   font-family: freight-sans-pro, sans-serif;
+  outline: none;
 }
 
 /******************************** Popup container*****************************************************/
@@ -405,6 +407,15 @@ input[type=submit] {
   height: 50px;
   border-radius: 50%;
   cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .calendar__container__content__table {
+    width: 95%;
+  }
+  .calendar__container__content__table__gird {
+    height: 84%;
+  }
 }
 
 .faq {
@@ -703,6 +714,46 @@ input[type=submit] {
   }
 }
 
+@media (max-width: 1024px) {
+  .faq__answers {
+    margin-top: -2%;
+  }
+  .faq__answers .faq__answers_el1 {
+    width: 65%;
+    font-size: 18px;
+  }
+  .faq__answers .faq__answers_el2 {
+    width: 65%;
+    font-size: 18px;
+  }
+  .faq__answers .faq__answers_el3 {
+    width: 65%;
+    font-size: 18px;
+  }
+  .faq__answers .faq__answers_el4 {
+    width: 65%;
+    font-size: 18px;
+  }
+  .faq__answers .faq__answers_el5 {
+    width: 65%;
+    font-size: 18px;
+  }
+  .faq__answers .faq__answers_el6 {
+    width: 65%;
+    font-size: 18px;
+  }
+  .faq__answers .faq__answers_el7 {
+    width: 65%;
+    font-size: 18px;
+  }
+  .faq__questions .container__header {
+    width: 65%;
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 15px 2.5%;
+  }
+}
+
 /******************* WELCOME *******************/
 .container {
   background-color: #94D5DE;
@@ -804,6 +855,25 @@ input[type=submit] {
   font-weight: 600;
   -webkit-box-shadow: 4px 8px 6px #00000021;
           box-shadow: 4px 8px 6px #00000021;
+}
+
+@media (max-width: 1024px) {
+  .container__content .container__img {
+    width: 180px;
+    height: 180px;
+    margin-top: -90px;
+  }
+  .container__content .container__header {
+    width: 90%;
+    font-size: 30px;
+    margin: 10px 0 10px 0;
+  }
+  .container__content .container__btn {
+    width: 30%;
+    margin-top: 40px;
+    padding: 25px 15px 25px 15px;
+    font-size: 40px;
+  }
 }
 
 .test_container {
@@ -1511,6 +1581,22 @@ p {
           box-shadow: 4px 8px 6px #00000021;
 }
 
+@media (max-width: 1024px) {
+  .menu .menu__header {
+    width: 80%;
+    font-size: 25px;
+    padding: 2% 0;
+    margin: 10px 0 0 0;
+  }
+  .menu__btn-content {
+    width: 80%;
+  }
+  .menu__btn-content__btn {
+    margin: 20px 0 0 0;
+    padding: 2% 0;
+  }
+}
+
 .dot__el1 {
   width: 30px;
   height: 30px;
@@ -1618,10 +1704,11 @@ p {
 .container__item1 {
   top: -20%;
   right: -25%;
+  width: 40%;
 }
 
 .container__item2 {
-  top: -30%;
+  top: -25%;
   right: -5%;
   width: 30%;
 }
@@ -1629,12 +1716,14 @@ p {
 .container__item3 {
   bottom: -20%;
   left: 5%;
+  width: 15%;
   z-index: 98;
 }
 
 .container__item4 {
   bottom: -25%;
   left: -10%;
+  width: 25%;
 }
 
 /*******************************ADMIN PANEL*******************************/
@@ -1699,5 +1788,14 @@ p {
   transition: background 0s;
 }
 
-/******* Button style *******/
+@media (max-width: 1024px) {
+  .container__item3 {
+    bottom: -25%;
+    width: 25%;
+  }
+  .container__item4 {
+    bottom: -28%;
+    width: 35%;
+  }
+}
 /*# sourceMappingURL=main.css.map */

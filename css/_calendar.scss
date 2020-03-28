@@ -84,6 +84,7 @@
                     border: none;
                     cursor: pointer;
                     font-family: freight-sans-pro, sans-serif;
+                    outline: none;
                 }
 
                 %red_elements{
@@ -96,6 +97,7 @@
                     border: none;
                     cursor: pointer;
                     font-family: freight-sans-pro, sans-serif;
+                    outline: none;
                 }
 
                 &__element1{
@@ -492,4 +494,14 @@ input[type=submit] {
     cursor: pointer;
 }
 
+@media (max-width: 1024px){
+.calendar__container__content__table {
+    width: 95%;
+
+    &__gird {
+        height: 84%;
+    }
+}
+
+}
  

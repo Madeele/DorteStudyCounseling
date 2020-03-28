@@ -96,3 +96,28 @@
             box-shadow: 4px 8px 6px #00000021;
     }
 }
+
+@media (max-width: 1024px){
+
+    .container{
+        &__content{
+            .container__img{
+                width: 180px;
+                height: 180px;
+                margin-top: -90px;
+            }
+            .container__header{
+                width: 90%;
+                font-size: 30px;
+                margin: 10px 0 10px 0;
+            }
+
+            .container__btn{
+                width: 30%;
+                margin-top: 40px;
+                padding: 25px 15px 25px 15px;
+                font-size: 40px;
+            }
+        }
+    }
+}
