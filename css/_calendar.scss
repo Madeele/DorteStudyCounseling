@@ -294,7 +294,7 @@
     visibility: hidden;
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 65%;
     background-color:$grey;
     color: $dark;
     text-align: left;
@@ -470,7 +470,7 @@ input[type=submit] {
     height: 450px;
     float: right;
     margin-top: 10px;
-    margin-right: 20px;
+    margin-right: 35px;
     outline: 0;
 }
 
@@ -492,6 +492,19 @@ input[type=submit] {
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.popup_close_button{
+    position: relative;
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    margin-right: 10px;
+    margin-left: 10px;
+    outline: none;
 }
 
 @media (max-width: 1024px){

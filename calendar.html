@@ -37,15 +37,18 @@
 				<div class="popup" onclick="myFunction()">
 					<div class="popuptext" id="myPopup">
 						<form action="/#" name="contactForm">
+							<div class="popup_close_button ripple" tabindex="1">
+								<span class="calendar_popup_close">&times;</span>
+							</div>
 							<div id="map"></div>
 							<label  for="fname">First Name</label>
-							<input class="popup_label" type="text" id="fname" name="firstname" placeholder="Your name.." minlength="3" maxlength="20" required>
+							<input class="popup_label" type="text" id="fname" name="firstname" placeholder="Your name.." minlength="3" maxlength="20" pattern="[A-Za-z]" title="Please enter only letters" required>
 
 							<label  for="fname">Last Name</label>
 							<input class="popup_label" type="text" id="lname" name="lastname" placeholder="Your name.." minlength="3" maxlength="20" required>
 
 							<label  for="lname">E-mail</label>
-							<input  type="email" id="email" name="email" placeholder="Your E-mail addresss">
+							<input  type="email" id="email" name="email" placeholder="Your E-mail addresss" required>
 
 							<label  for="lname">Phone number</label>
 							<input class="popup_label" type="tel" id="phone" name="phone" placeholder="Your phone number" minlength="8" maxlength="8" required>
@@ -67,8 +70,8 @@
 							<p>The appointment has been set up.
 							You will get a confirmation on your email soon.</p>
 
-							<p>You will be inform about any changes via and email.</p>
-							<button onclick="location.href='menu.html'">Back</button>
+							<p>You will be inform about any changes via email.</p>
+							<button onclick="location.href='menu.html'">Back to menu</button>
 						</div>
 				  </div>
 				
@@ -229,9 +232,13 @@
 				var thanks = document.getElementById("thanks");
 				var popup = document.getElementById("myPopup");
 				popup.style="display: none";
-				thanks.style="display: fixed";
+				thanks.style="display: block";
 			};
 		};
+		
+		document.getElementById("submit-btn").addEventListener("click", function(event){
+  		event.preventDefault()
+});
 
 		function back(){
 			setTimeout(function(){
@@ -294,6 +301,16 @@
 					},);
 			}, 200);
 		}
+
+		$(".popup_close_button").click(function(){
+			setTimeout(function() {
+				$(".popuptext").css({
+					"display":"none"
+				});
+			},400);
+		});
+
+		
 		</script>
 </body>
 </html>
