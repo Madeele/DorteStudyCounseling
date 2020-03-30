@@ -17,7 +17,6 @@
         height: 100%;
         margin: 0 auto;
 
-
         &__header{
             width: 70%;
             font-size: 20px;
@@ -39,243 +38,55 @@
             }
         }
 
-        &__days{
-            display: flex;
-            justify-content: center;
-            width: 10%;
-            flex-direction: column;
-            flex-wrap: wrap;
-            outline: none;
-            position: absolute;
-            height: 60%;
-            margin-top: 15px;
-                &__element1 {
-                    margin-bottom: 30px;
-                }
-        }
-
         &__table{
-            width: 150%;
-            height: 60%;
+            width: 100%;
             background-color: $grey;
             border-radius: 20px;
             text-align: center;
             box-shadow: 4px 8px 6px #00000021;
 
+            &__date{
+                padding-top: 20px;
+            }
+
             &__grid{
-                margin-top: 70px;
-                margin-right: 40px;
                 display: flex;
                 justify-content: center;
-                max-width: 85%;
-                height: 70%;
+                max-width: 90%;
+                margin: 0 auto;
                 flex-wrap: wrap;
+                flex-direction: column;
                 outline: none;
-                float: right;
-                
+                &__element{
+                    display: flex;
+                    width: 100%;
+                    margin: 15px 0;
+                    justify-content: center;
+                    
+                    &__day{
+                        margin-left: 0px;
+                        text-align: left;
+                        width: 15%;
+                    }
 
-                %green_elements{
-                    background-color: $green;
-                    width: 7.5%;
-                    padding: 5px;
-                    margin: 4px;
-                    border-radius: 20px;
-                    font-size: 14px;
-                    border: none;
-                    cursor: pointer;
-                    font-family: freight-sans-pro, sans-serif;
-                    outline: none;
-                }
+                    &__hour{
+                        margin: 0 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        flex-wrap: wrap;
 
-                %red_elements{
-                    background-color: $red;
-                    width: 7.5%;
-                    margin: 4px;
-                    padding: 5px;
-                    border-radius: 20px;
-                    font-size: 14px;
-                    border: none;
-                    cursor: pointer;
-                    font-family: freight-sans-pro, sans-serif;
-                    outline: none;
-                }
-
-                &__element1{
-                    @extend %green_elements;
-                }
-                &__element2{
-                    @extend %green_elements;
-                }
-                &__element3{
-                    @extend %green_elements;
-                }
-                &__element4{
-                    @extend %red_elements;
-                }
-                &__element5{
-                    @extend %red_elements;
-                }
-                &__element6{
-                    @extend %green_elements;
-                }
-                &__element7{
-                    @extend %green_elements;
-                }
-                &__element8{
-                    @extend %green_elements;
-                }
-                &__element9{
-                    @extend %green_elements;
-                }
-                &__element10{
-                    @extend %red_elements;
-                }
-                &__element11{
-                    @extend %green_elements;
-                }
-                &__element12{
-                    @extend %green_elements;
-                }
-                &__element13{
-                    @extend %green_elements;
-                }
-                &__element14{
-                    @extend %green_elements;
-                }
-                &__element15{
-                    @extend %red_elements;
-                }
-                &__element16{
-                    @extend %green_elements;
-                }
-                &__element17{
-                    @extend %red_elements;
-                }
-                &__element18{
-                    @extend %green_elements;
-                }
-                &__element19{
-                    @extend %green_elements;
-                }
-                &__element20{
-                    @extend %green_elements;
-                }
-                &__element21{
-                    @extend %green_elements;
-                }
-                &__element22{
-                    @extend %green_elements;
-                }
-                &__element23{
-                    @extend %green_elements;
-                }
-                &__element24{
-                    @extend %green_elements;
-                }
-                &__element25{
-                    @extend %green_elements;
-                }
-                &__element26{
-                    @extend %red_elements;
-                }
-                &__element27{
-                    @extend %green_elements;
-                }
-                &__element28{
-                    @extend %red_elements;
-                }
-                &__element29{
-                    @extend %green_elements;
-                }
-                &__element30{
-                    @extend %green_elements;
-                }
-                &__element31{
-                    @extend %green_elements;
-                }
-                &__element32{
-                    @extend %green_elements;
-                }
-                &__element33{
-                    @extend %green_elements;
-                }
-                &__element34{
-                    @extend %green_elements;
-                }
-                &__element35{
-                    @extend %green_elements;
-                }
-                &__element36{
-                    @extend %green_elements;
-                }
-                &__element37{
-                    @extend %green_elements;
-                }
-                &__element38{
-                    @extend %green_elements;
-                }
-                &__element39{
-                    @extend %green_elements;
-                }
-                &__element40{
-                    @extend %green_elements;
-                }
-                &__element41{
-                    @extend %green_elements;
-                }
-                &__element42{
-                    @extend %green_elements;
-                }
-                &__element43{
-                    @extend %red_elements;
-                }
-                &__element44{
-                    @extend %green_elements;
-                }
-                &__element45{
-                    @extend %green_elements;
-                }
-                &__element46{
-                    @extend %green_elements;
-                }
-                &__element47{
-                    @extend %green_elements;
-                }
-                &__element48{
-                    @extend %red_elements;
-                }
-                &__element49{
-                    @extend %green_elements;
-                }
-                &__element50{
-                    @extend %green_elements;
-                }
-                &__element51{
-                    @extend %green_elements;
-                }
-                &__element52{
-                    @extend %green_elements;
-                }
-                &__element53{
-                    @extend %green_elements;
-                }
-                &__element54{
-                    @extend %green_elements;
-                }
-                &__element55{
-                    @extend %green_elements;
-                }
-                &__element56{
-                    @extend %green_elements;
-                }
-                &__element57{
-                    @extend %red_elements;
-                }
-                &__element58{
-                    @extend %green_elements;
-                }
-                &__element59{
-                    @extend %green_elements;
+                        &__el{
+                            background-color: $green;
+                            padding: 10px 12px;
+                            margin: 4px;
+                            border-radius: 20px;
+                            font-size: 14px;
+                            border: none;
+                            cursor: pointer;
+                            font-family: freight-sans-pro, sans-serif;
+                            outline: none;
+                        }
+                    }
                 }
             }
         }
@@ -287,9 +98,9 @@
     position: relative;
     display: inline-block;
     cursor: pointer;
-  }
+}
 
-  /* The actual popup (appears on top) */
+/* The actual popup (appears on top) */
 .popup .popuptext {
     visibility: hidden;
     display: flex;
@@ -310,14 +121,14 @@
     box-shadow: 4px 8px 6px #00000021;
 }
 
-  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s
 }
 
-  /* Add animation (fade in the popup) */
+/* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -331,7 +142,7 @@
 label{
     font-size: 18px;
     color: $blue;
-    margin-left: 5%;
+    margin-left: 40px;
 }
 
 input, select {
@@ -349,15 +160,15 @@ input, select {
     font-family: $font;
 }
 
-select{
+select {
     text-align-last: center;
 }
 
-input::placeholder{
+input::placeholder {
       font-size: 14px;
 }
 
-input[type=datetime-local]{
+input[type=datetime-local] {
     text-align: center;
 }
 
@@ -419,10 +230,12 @@ input[type=submit] {
     font-size: 52px;
     transition: all 0.4s ease-in;
     z-index: 100;
+
     span[class^='ion'] {
       position: relative;
       
     }
+
     //start click effect
     &:before {
       content: '';
@@ -437,9 +250,11 @@ input[type=submit] {
       transform: scale(0.001, 0.001);
       z-index: 100;
     }
+
     &:focus {
       outline: 0;
       color: #fff;
+
       &:before {
         animation: effect_dylan 0.8s ease-out;
       }
@@ -508,13 +323,20 @@ input[type=submit] {
 }
 
 @media (max-width: 1024px){
-.calendar__container__content__table {
-    width: 95%;
+    .calendar__container__content__table {
+        width: 95%;
+        height: 60%;
 
-    &__gird {
-        height: 84%;
     }
-}
-
+    .calendar__container__content__table__grid {
+        height: 75%;
+        max-width: 100%;
+    }
+    .calendar__container__content__table__grid__element {
+        margin: 10px 0;
+    }
+    .popup .popuptext {
+        width: 93%;
+    }
 }
  

@@ -22,19 +22,15 @@
 		<div class="xbutton2" tabindex="1"></div>
 		<img src="images/prev.svg" class="faq__prev-arrow"alt="prev arrow" onclick="back()">
 		<div class="calendar__container__content">
-				<header class="calendar__container__content__header">
-					<img src="images/avatarorange.svg" class="calendar__container__content__img" alt="avatar">
-					<p>CHOOSE THE DAY AND TIME FOR YOUR APPOINTMENT</p>
-				</header>
+			<header class="calendar__container__content__header">
+				<img src="images/avatarorange.svg" class="calendar__container__content__img" alt="avatar">
+				<p>CHOOSE THE DAY AND TIME FOR YOUR APPOINTMENT</p>
+			</header>
 			<div class="calendar__container__content__table">
-				<div class="calendar__container__content__days">
-					<div class="calendar__container__content__days__element1">Monday</div>
-					<div class="calendar__container__content__days__element1">Tuesday</div>
-					<div class="calendar__container__content__days__element1">Wednesday</div>
-					<div class="calendar__container__content__days__element1">Thursday</div>
-					<div class="calendar__container__content__days__element1">Friday</div>
+				<div class="calendar__container__content__table__date">
+					<h3>30 March - 3 April 2020</h3>
 				</div>
-				<div class="popup" onclick="myFunction()">
+				<div class="popup">
 					<div class="popuptext" id="myPopup">
 						<form action="/#" name="contactForm">
 							<div class="popup_close_button ripple" tabindex="1">
@@ -42,7 +38,7 @@
 							</div>
 							<div id="map"></div>
 							<label  for="fname">First Name</label>
-							<input class="popup_label" type="text" id="fname" name="firstname" placeholder="Your name.." minlength="3" maxlength="20" pattern="[A-Za-z]" title="Please enter only letters" required>
+							<input class="popup_label" type="text" id="fname" name="firstname" placeholder="Your name.." minlength="3" maxlength="20" required>
 
 							<label  for="fname">Last Name</label>
 							<input class="popup_label" type="text" id="lname" name="lastname" placeholder="Your name.." minlength="3" maxlength="20" required>
@@ -62,7 +58,6 @@
 								<option>Trine-Maria Frederiksen</option>
 							</select>
 
-
 							<input type="submit" id="submit-btn" value="Submit" onclick="validation(); showThanks()">
 						  </form>
 						</div>
@@ -70,160 +65,152 @@
 							<p>The appointment has been set up.
 							You will get a confirmation on your email soon.</p>
 
-							<p>You will be inform about any changes via email.</p>
-							<button onclick="location.href='menu.html'">Back to menu</button>
+							<p>You will be inform about any changes via and email.</p>
+							<button onclick="location.href='menu.html'" class="thankyou__info__btn">Back</button>
 						</div>
 				  </div>
 				
 				<div class="calendar__container__content__table__grid">
-					<!--<button class="calendar__container__content__table__grid__element1 AAA" onclick="myFunction()" id="btn_hours">08:00</button>-->
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element1">09:00</button>
- 					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element2">09:30</button>
- 					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element3">10:00</button>
- 					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element4">10:30</button>
- 					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element5">11:00</button>
- 					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element6">11:30</button>
- 					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element7">12:00</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element8">12:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element9">13:00</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element9">13:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element10">14:00</button>
- 					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element11">14:30</button>
- 					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element12">09:00</button>
- 					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element13">09:30</button>
- 					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element14">10:00</button>
- 					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element15">10:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element16">11:00</button>
-  					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element17">11:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element18">12:00</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element19">12:30</button>
- 					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element20">13:00</button>
- 					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element21">13:30</button>
- 					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element22">14:00</button>
-  					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element23">14:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element24">09:00</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element25">09:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element26">10:00</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element27">10:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element28">11:00</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element29">11:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element30">12:00</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element31">12:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element32">13:00</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element33">13:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element34">14:00</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element35">14:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element36">09:00</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element37">09:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element38">10:00</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element39">10:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element40">11:00</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element41">11:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element42">12:00</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element43">12:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element44">13:00</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element45">13:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element46">14:00</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element47">14:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element48">09:00</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element49">09:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element50">10:00</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element51">10:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element52">11:00</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element53">11:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element54">12:00</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element55">12:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element56">13:00</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element57">13:30</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element58">14:00</button>
-					<button class="calendar__container__content__table__grid__element calendar__container__content__table__grid__element59">14:30</button>
+					<div class="calendar__container__content__table__grid__element">
+						<div class="calendar__container__content__table__grid__element__day">
+							<h4>Monday</h4>
+						</div>
+						<div class="calendar__container__content__table__grid__element__hour">
+							<button class="calendar__container__content__table__grid__element__hour__el">09:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">09:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">10:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">10:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">11:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">11:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">12:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">12:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">13:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">13:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">14:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">14:30</button>
+						</div>
+					</div>
+					<div class="calendar__container__content__table__grid__element">
+						<div class="calendar__container__content__table__grid__element__day">
+							<h4>Tuesday</h4>
+						</div>
+						<div class="calendar__container__content__table__grid__element__hour">
+							<button class="calendar__container__content__table__grid__element__hour__el">09:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">09:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">10:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">10:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">11:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">11:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">12:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">12:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">13:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">13:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">14:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">14:30</button>
+						</div>
+					</div>
+					<div class="calendar__container__content__table__grid__element">
+						<div class="calendar__container__content__table__grid__element__day">
+							<h4>Wednesday</h4>
+						</div>
+						<div class="calendar__container__content__table__grid__element__hour">
+							<button class="calendar__container__content__table__grid__element__hour__el">09:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">09:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">10:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">10:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">11:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">11:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">12:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">12:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">13:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">13:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">14:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">14:30</button>
+						</div>
+					</div>
+					<div class="calendar__container__content__table__grid__element">
+						<div class="calendar__container__content__table__grid__element__day">
+							<h4>Thursday</h4>
+						</div>
+						<div class="calendar__container__content__table__grid__element__hour">
+							<button class="calendar__container__content__table__grid__element__hour__el">09:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">09:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">10:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">10:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">11:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">11:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">12:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">12:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">13:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">13:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">14:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">14:30</button>
+						</div>
+					</div>
+					<div class="calendar__container__content__table__grid__element">
+						<div class="calendar__container__content__table__grid__element__day">
+							<h4>Friday</h4>
+						</div>
+						<div class="calendar__container__content__table__grid__element__hour">
+							<button class="calendar__container__content__table__grid__element__hour__el">09:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">09:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">10:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">10:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">11:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">11:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">12:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">12:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">13:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">13:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">14:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">14:30</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<script type="text/javascript" src=""></script>
 	<script>
-		// When the user clicks on <div>, open the popup
-		//function myFunction() {
-		  //var popup = document.getElementById("myPopup");
-		 // popup.classList.add("show");
-		//}
-/*
-		var ilosc = document.getElementsByClassName("AAA");
-		//alert(ilosc.length);
-
-		for(i=0; i< ilosc.length; i++){
-			ilosc[i].click(
-				myFunction();
-				var btnValue = $(".AAA").text();
-				$("#meeting-time").val("2020-04-14T"+btnValue);
-			);
-		}	;	*/
-
-		
-
-	/*	$(".AAA").click(function(){
-			$(".AAA").each(function(i){
-				alert(i);
-			});
-		});*/
-
-
-		$(".calendar__container__content__table__grid__element").each(function(){
-			$(".calendar__container__content__table__grid__element").click(function(){
+		$(".calendar__container__content__table__grid__element__hour__el").each(function(){
+			$(".calendar__container__content__table__grid__element__hour__el").click(function(){
 				var btnValue = $(this).text();
+				
 				var popup = document.getElementById("myPopup");
 		  		popup.classList.add("show");
-				$("#meeting-time").val("2020-04-14T"+btnValue);
+				$("#meeting-time").val("2020-04-02T"+btnValue);
+
+				localStorage.setItem("status", "booked");
+				if(localStorage.getItem("status") == "booked"){
+					console.log("Local storage is here");
+					$(this).css("background-color", "#E37B7B");
+				};
+
 			});
 		});
-		
-		/*
-		$(".AAA").click(function(){
-			var btnValue = $(".AAA").text();
-			$("#meeting-time").val("2020-04-14T"+btnValue);
-		});*/
-/*
-		function showThanks() {
-		  console.log("show/hide")
-		  var thanks = document.getElementById("thanks");
-		  var popup = document.getElementById("myPopup");
-		  popup.style="display: none";
-		  thanks.style="display: block";
-		}*/
 
 		//Validation user's data
 		function validation(){
 			//Checking if input is empty. If yes, then infromation will show text about providing correct data
 			if( document.contactForm.firstname.value == "" ) {
-				alert( "Please provide your name!" );
-				document.contactForm.firstname.focus();
+				document.contactForm.firstname.style.border = "1px solid #E37B7B";
 				return false;
 			}
 			if( document.contactForm.lastname.value == "" ) {
-				alert( "Please provide your name!" );
-				document.contactForm.lastname.focus();
+				document.contactForm.firstname.style.border = "1px solid #E37B7B";
 				return false;
 			}
 			if( document.contactForm.email.value == "" ) {
-				alert( "Please provide your Email!" );
-				document.contactForm.email.focus();
+				document.contactForm.firstname.style.border = "1px solid #E37B7B";
 				return false;
 			}
 			//Checking if phone is empty and if it's a number and has 8 numbers
 			if( document.contactForm.phone.value == "" || isNaN( document.contactForm.phone.value ) ||
 				document.contactForm.phone.value.length != 8 ) {
-
-				alert( "Please provide a phone number." );
-				document.contactForm.phone.focus();
+				document.contactForm.firstname.style.border = "1px solid #E37B7B";
 				return false;
 			}
 			return( true );
 		};
-		/*
-		var submit = document.getElementById("submit-btn");
-		submit.addEventListener("click", validation());*/
 
 		//Showing information that appointment has been booked
 		function showThanks(){
@@ -235,10 +222,11 @@
 				thanks.style="display: block";
 			};
 		};
-		
+
 		document.getElementById("submit-btn").addEventListener("click", function(event){
-  		event.preventDefault()
-});
+				event.preventDefault()
+		});
+
 
 		function back(){
 			setTimeout(function(){
@@ -260,33 +248,34 @@
 			center: monument,
 			zoom: 16
 		});
-		var popup = new mapboxgl.Popup({
-            offset: 25
-        }).setText(
-            'Main Building of Business Academy Aarhus'
-        );
 
-        let pop2 = new mapboxgl.Popup({
-            offset: 25
-        }).setText(
-            'Golden Building of Business Academy Aarhus'
-        );
+		var popup = new mapboxgl.Popup({
+			offset: 25
+			}).setText(
+				'Main Building of Business Academy Aarhus'
+		);
+
+		let pop2 = new mapboxgl.Popup({
+			offset: 25
+		}).setText(
+			'Golden Building of Business Academy Aarhus'
+		);
 
 		var el = document.createElement('div');
-        el.id = 'marker';
+		el.id = 'marker';
 
-        var el2 = document.createElement('div');
-        el2.id = 'mark2';
+		var el2 = document.createElement('div');
+		el2.id = 'mark2';
 
 		new mapboxgl.Marker(el)
-            .setLngLat(monument)
-            .setPopup(popup) // sets a popup on this marker
-            .addTo(map);
+			.setLngLat(monument)
+			.setPopup(popup) // sets a popup on this marker
+			.addTo(map);
 
-        new mapboxgl.Marker(el2)
-            .setLngLat(mon2)
-            .setPopup(pop2) // sets a popup on this marker
-            .addTo(map);
+		new mapboxgl.Marker(el2)
+			.setLngLat(mon2)
+			.setPopup(pop2) // sets a popup on this marker
+			.addTo(map);
 
 		function calendar_back(){
 			setTimeout(function(){
@@ -296,7 +285,7 @@
 					setTimeout(function() {
 						$(".calendar__container__content__table__grid2").css({
 							"display":"block",
-							
+								
 						});
 					},);
 			}, 200);
@@ -309,8 +298,7 @@
 				});
 			},400);
 		});
+	</script>
 
-		
-		</script>
 </body>
 </html>

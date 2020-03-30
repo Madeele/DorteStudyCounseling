@@ -60,33 +60,8 @@ body {
   padding-left: 10px;
 }
 
-.calendar__container__content__days {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 10%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  outline: none;
-  position: absolute;
-  height: 60%;
-  margin-top: 15px;
-}
-
-.calendar__container__content__days__element1 {
-  margin-bottom: 30px;
-}
-
 .calendar__container__content__table {
-  width: 150%;
-  height: 60%;
+  width: 100%;
   background-color: #FAFAFA;
   border-radius: 20px;
   text-align: center;
@@ -94,41 +69,61 @@ body {
           box-shadow: 4px 8px 6px #00000021;
 }
 
+.calendar__container__content__table__date {
+  padding-top: 20px;
+}
+
 .calendar__container__content__table__grid {
-  margin-top: 70px;
-  margin-right: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 85%;
-  height: 70%;
+  max-width: 90%;
+  margin: 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   outline: none;
-  float: right;
 }
 
-.calendar__container__content__table__grid .calendar__container__content__table__grid__element1, .calendar__container__content__table__grid .calendar__container__content__table__grid__element2, .calendar__container__content__table__grid .calendar__container__content__table__grid__element3, .calendar__container__content__table__grid .calendar__container__content__table__grid__element6, .calendar__container__content__table__grid .calendar__container__content__table__grid__element7, .calendar__container__content__table__grid .calendar__container__content__table__grid__element8, .calendar__container__content__table__grid .calendar__container__content__table__grid__element9, .calendar__container__content__table__grid .calendar__container__content__table__grid__element11, .calendar__container__content__table__grid .calendar__container__content__table__grid__element12, .calendar__container__content__table__grid .calendar__container__content__table__grid__element13, .calendar__container__content__table__grid .calendar__container__content__table__grid__element14, .calendar__container__content__table__grid .calendar__container__content__table__grid__element16, .calendar__container__content__table__grid .calendar__container__content__table__grid__element18, .calendar__container__content__table__grid .calendar__container__content__table__grid__element19, .calendar__container__content__table__grid .calendar__container__content__table__grid__element20, .calendar__container__content__table__grid .calendar__container__content__table__grid__element21, .calendar__container__content__table__grid .calendar__container__content__table__grid__element22, .calendar__container__content__table__grid .calendar__container__content__table__grid__element23, .calendar__container__content__table__grid .calendar__container__content__table__grid__element24, .calendar__container__content__table__grid .calendar__container__content__table__grid__element25, .calendar__container__content__table__grid .calendar__container__content__table__grid__element27, .calendar__container__content__table__grid .calendar__container__content__table__grid__element29, .calendar__container__content__table__grid .calendar__container__content__table__grid__element30, .calendar__container__content__table__grid .calendar__container__content__table__grid__element31, .calendar__container__content__table__grid .calendar__container__content__table__grid__element32, .calendar__container__content__table__grid .calendar__container__content__table__grid__element33, .calendar__container__content__table__grid .calendar__container__content__table__grid__element34, .calendar__container__content__table__grid .calendar__container__content__table__grid__element35, .calendar__container__content__table__grid .calendar__container__content__table__grid__element36, .calendar__container__content__table__grid .calendar__container__content__table__grid__element37, .calendar__container__content__table__grid .calendar__container__content__table__grid__element38, .calendar__container__content__table__grid .calendar__container__content__table__grid__element39, .calendar__container__content__table__grid .calendar__container__content__table__grid__element40, .calendar__container__content__table__grid .calendar__container__content__table__grid__element41, .calendar__container__content__table__grid .calendar__container__content__table__grid__element42, .calendar__container__content__table__grid .calendar__container__content__table__grid__element44, .calendar__container__content__table__grid .calendar__container__content__table__grid__element45, .calendar__container__content__table__grid .calendar__container__content__table__grid__element46, .calendar__container__content__table__grid .calendar__container__content__table__grid__element47, .calendar__container__content__table__grid .calendar__container__content__table__grid__element49, .calendar__container__content__table__grid .calendar__container__content__table__grid__element50, .calendar__container__content__table__grid .calendar__container__content__table__grid__element51, .calendar__container__content__table__grid .calendar__container__content__table__grid__element52, .calendar__container__content__table__grid .calendar__container__content__table__grid__element53, .calendar__container__content__table__grid .calendar__container__content__table__grid__element54, .calendar__container__content__table__grid .calendar__container__content__table__grid__element55, .calendar__container__content__table__grid .calendar__container__content__table__grid__element56, .calendar__container__content__table__grid .calendar__container__content__table__grid__element58, .calendar__container__content__table__grid .calendar__container__content__table__grid__element59 {
+.calendar__container__content__table__grid__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 15px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calendar__container__content__table__grid__element__day {
+  margin-left: 0px;
+  text-align: left;
+  width: 15%;
+}
+
+.calendar__container__content__table__grid__element__hour {
+  margin: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.calendar__container__content__table__grid__element__hour__el {
   background-color: #BDD7A9;
-  width: 7.5%;
-  padding: 5px;
+  padding: 10px 12px;
   margin: 4px;
-  border-radius: 20px;
-  font-size: 14px;
-  border: none;
-  cursor: pointer;
-  font-family: freight-sans-pro, sans-serif;
-  outline: none;
-}
-
-.calendar__container__content__table__grid .calendar__container__content__table__grid__element4, .calendar__container__content__table__grid .calendar__container__content__table__grid__element5, .calendar__container__content__table__grid .calendar__container__content__table__grid__element10, .calendar__container__content__table__grid .calendar__container__content__table__grid__element15, .calendar__container__content__table__grid .calendar__container__content__table__grid__element17, .calendar__container__content__table__grid .calendar__container__content__table__grid__element26, .calendar__container__content__table__grid .calendar__container__content__table__grid__element28, .calendar__container__content__table__grid .calendar__container__content__table__grid__element43, .calendar__container__content__table__grid .calendar__container__content__table__grid__element48, .calendar__container__content__table__grid .calendar__container__content__table__grid__element57 {
-  background-color: #E37B7B;
-  width: 7.5%;
-  margin: 4px;
-  padding: 5px;
   border-radius: 20px;
   font-size: 14px;
   border: none;
@@ -199,7 +194,7 @@ body {
 label {
   font-size: 18px;
   color: #6581CD;
-  margin-left: 5%;
+  margin-left: 40px;
 }
 
 input, select {
@@ -425,9 +420,17 @@ input[type=submit] {
 @media (max-width: 1024px) {
   .calendar__container__content__table {
     width: 95%;
+    height: 60%;
   }
-  .calendar__container__content__table__gird {
-    height: 84%;
+  .calendar__container__content__table__grid {
+    height: 75%;
+    max-width: 100%;
+  }
+  .calendar__container__content__table__grid__element {
+    margin: 10px 0;
+  }
+  .popup .popuptext {
+    width: 93%;
   }
 }
 
